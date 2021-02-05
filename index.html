@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HerbSpa</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <h1>Herb<span>Spa</span></h1>
+            <h5> | Clear Your Mind</h5>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </nav>
+        <button class="menu-icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+    </div>
+    <div class="row">
+        <div class="left-col">
+            <p class="heading">
+                <span class="sub-1">Spa</span>
+                <span class="sub-2"> & Massage</span>
+            </p>
+            <p class="title">A Stress Relieving <br>Experience With Herbal Recipes</p>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum
+                dolore eu fugiat nulla pariatur.</p>
+            <button>Read More</button>
+            <div class="social">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+        </div>
+        <div class="right-col">
+            <img src="images/image.jpg" alt="">
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+    var menu = document.getElementById('menu')
+    menu.style.left = '-100%';
+
+    function toggleMenu() {
+        if (menu.style.left === '0px') {
+            menu.style.left = '-100%';
+        } else {
+            menu.style.left = '0px';
+        }
+    }
+</script>
+</html>

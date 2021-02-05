@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo h1 {
+    color: #303030;
+}
+
+.navbar .logo h1 span {
+    color: #2e842d;
+}
+
+.navbar .logo h5 {
+    text-transform: uppercase;
+    color: #761246;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #303030;
+    font-size: 14px;
+    padding: 8px 15px;
+    letter-spacing: 1px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    border-bottom: 2px solid #761246;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.left-col {
+    flex-basis: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.left-col .heading {
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    align-items: center;
+    display: flex;
+    white-space: pre;
+}
+
+.left-col .title {
+    color: #2e842d;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.left-col .heading .sub-1 {
+    color: #fff;
+    background: #2e842d;
+    padding: 6px 50px;
+    position: absolute;
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.left-col .heading .sub-2 {
+    margin-left: 130px;
+    color: #303030;
+}
+
+.left-col .desc {
+    color: #ababab;
+    font-size: 12px;
+}
+
+.left-col button {
+    color: #ffffff;
+    background: #2e842d;
+    font-weight: 700;
+    border: 0;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 35px auto 0;
+    display: block;
+}
+
+.left-col .social {
+    padding: 25px 0;
+}
+
+.left-col .social i {
+    margin-right: 5px;
+    color: #ffffff;
+    background: #2e842d;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    line-height: 1.85;
+    font-size: 14px;
+}
+
+.right-col {
+    text-align: center;
+    flex-basis: 50%;
+}
+
+.right-col img {
+    max-height: 600px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .left-col .heading .sub-2 {
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .right-col img {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 90px;
+        left: -100px;
+        background: #761246;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+
+    nav ul {
+        display: block;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        margin: 25px 0;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        display: block;
+        font-size: 20px;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        color: #2e842d;
+        border-bottom: 0;
+    }
+}
